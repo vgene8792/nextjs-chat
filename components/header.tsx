@@ -68,7 +68,7 @@ export function Header() {
           className={cn(buttonVariants({ variant: 'outline' }))}
         >
           <IconGitHub />
-          <span className="hidden ml-2 md:flex">GitHub</span>
+          <span className="hidden ml-2 md:flex">gitHub</span>
         </a>
         <a
           href="https://github.com/vercel/nextjs-ai-chatbot/"
