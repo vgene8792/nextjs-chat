@@ -27,7 +27,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome to GenLite Genie AI Chatbot!
         </h1>
         <p className="mb-2 text-lg font-semibold">
-          How can i assist you today
+          How can i assist you today ?
         </p>
         <p className="leading-normal text-muted-foreground">
           You can start a conversation here or try the following examples:
