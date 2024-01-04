@@ -22,7 +22,7 @@ const exampleMessages = [
 export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
   return (
     <div className="mx-auto max-w-2xl px-4">
-      <div className="rounded-lg border bg-background p-8">
+      <div className="rounded-lg text-center border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
           Welcome to GenLite Genie AI Chatbot!
         </h1>
