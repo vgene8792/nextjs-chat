@@ -61,3 +61,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   )
 }
+
+console.log('layout has been loaded.')
