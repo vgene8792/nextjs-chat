@@ -48,3 +48,4 @@ export default async function SharePage({ params }: SharePageProps) {
     </>
   )
 }
+console.log('Share/Page has been loaded.')
