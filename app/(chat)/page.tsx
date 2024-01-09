@@ -6,3 +6,4 @@ export default function IndexPage() {
 
   return <Chat id={id} />
 }
+console.log('app/chat/page has been loaded.')
