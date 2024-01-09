@@ -15,3 +15,4 @@ export default async function ChatLayout({ children }: ChatLayoutProps) {
     </div>
   )
 }
+console.log('app/chat/layout has been loaded.')
