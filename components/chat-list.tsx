@@ -25,3 +25,4 @@ export function ChatList({ messages }: ChatList) {
     </div>
   )
 }
+console.log('chat hasbenloaded')

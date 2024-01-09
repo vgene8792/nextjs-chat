@@ -22,31 +22,17 @@ import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
 
 async function UserOrLogin() {
-  const session = await auth()
   return (
     <>
-      {session?.user ? (
-        <>
-          <SidebarMobile>
-            <ChatHistory userId={session.user.id} />
-          </SidebarMobile>
-          <SidebarToggle />
-        </>
-      ) : (
-        <Link href="/" target="_blank" rel="nofollow">
-          <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
-        </Link>
-      )}
+      <>
+        <SidebarMobile>
+          <ChatHistory />
+        </SidebarMobile>
+        <SidebarToggle />
+      </>
+
       <div className="flex items-center">
         <IconSeparator className="w-6 h-6 text-muted-foreground/50" />
-        {session?.user ? (
-          <UserMenu user={session.user} />
-        ) : (
-          <Button variant="link" asChild className="-ml-2">
-            <Link href="/sign-in?callbackUrl=/">LOGIN</Link>
-          </Button>
-        )}
       </div>
     </>
   )

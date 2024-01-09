@@ -45,3 +45,4 @@ export default async function ChatPage({ params }: ChatPageProps) {
 
   return <Chat id={chat.id} initialMessages={chat.messages} />
 }
+console.log('app/chat has been loaded.')
